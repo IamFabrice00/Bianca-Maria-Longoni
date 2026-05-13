@@ -13,3 +13,14 @@
 .font-serif {
   font-family: 'EB Garamond', serif;
 }
+
+/* Nasconde il cursore di sistema sulle aree interattive se desiderato, 
+   o usiamo cursor-none sulle classi specifiche in Tailwind */
+.cursor-none {
+  cursor: none !important;
+}
+
+/* Per il Lightbox e le animazioni */
+::selection {
+  @apply bg-black text-white;
+}
